@@ -36,7 +36,7 @@ namespace
 	int32 mainWindow;
 	float settingsHz = 60.0;
 	float gravity = -10.0;
-	GLUI *glui;
+	GLUI *glui;  //more comments for git tutorial
 	float32 viewZoom = 1.0f;
 	b2Vec2 viewCenter(0.0f, 20.0f);
 	int tx, ty, tw, th;
