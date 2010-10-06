@@ -35,6 +35,7 @@ namespace
 	int32 framePeriod = 16;
 	int32 mainWindow;
 	float settingsHz = 60.0;
+	float gravity = -10.0;
 	GLUI *glui;
 	float32 viewZoom = 1.0f;
 	b2Vec2 viewCenter(0.0f, 20.0f);
