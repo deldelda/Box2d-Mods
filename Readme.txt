@@ -1,3 +1,9 @@
+Box2D Mods - Andrew Lenox, Kevin S, and Micheal W.
+Making some modes to Box2D for UMFlint Game-Dev class
+
+
+Below is the original Readme
+____________________________
 Box2D Version 2.1
 
 Welcome to Box2D!
