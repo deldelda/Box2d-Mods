@@ -102,6 +102,9 @@ void SimulationLoop()
 	test->SetTextLine(30);
 	settings.hz = settingsHz;
 	test->Step(&settings);
+	b2Vec2 g;
+	g.Set(0.0f, gravity);
+	test->SetWorldGravity(g);
 
 	test->DrawTitle(5, 15, entry->name);
 
@@ -370,6 +373,10 @@ int main(int argc, char** argv)
 
 	GLUI_Spinner* hertzSpinner =
 		glui->add_spinner("Hertz", GLUI_SPINNER_FLOAT, &settingsHz);
+		
+	GLUI_Spinner* gravitySpinner = 
+			glui->add_spinner("Gravity", GLUI_SPINNER_FLOAT, &gravity);
+		gravitySpinner->set_float_limits(-10.0, 100.0);
 
 	hertzSpinner->set_float_limits(5.0f, 200.0f);
 

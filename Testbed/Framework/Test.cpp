@@ -186,6 +186,11 @@ void Test::CompleteBombSpawn(const b2Vec2& p)
 	m_bombSpawning = false;
 }
 
+void Test::SetWorldGravity(const b2Vec2& g)
+{
+	m_world->SetGravity(g);
+}
+
 void Test::ShiftMouseDown(const b2Vec2& p)
 {
 	m_mouseWorld = p;
